@@ -17,7 +17,15 @@ DEFAULT_DELIMITER = ','
 @my_app.callback("create_user_from_csv")
 @sly.timeit
 def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
-    with open(INPUT_FILE, "r") as f_obj:
+
+    storage_dir = my_app.data_dir
+    #@TODO: only for debug
+    #storage_dir = "~" + storage_dir
+    #sly.fs.mkdir(storage_dir)
+    local_csv_path = os.path.join(storage_dir, "accounts.csv")
+    api.file.download(TEAM_ID, INPUT_FILE, local_csv_path)
+
+    with open(local_csv_path, "r") as f_obj:
         new_users = {}
         reader = csv.DictReader(f_obj, delimiter=DEFAULT_DELIMITER)
 
@@ -42,6 +50,8 @@ def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
     for user, user_data in new_users.items():
         api.user.create(login=user_data[LOGIN_COL_NAME], password=user_data[PASSWORD_COL_NAME], is_restricted=False)
         progress.iter_done_report()
+
+    sly.fs.silent_remove(local_csv_path)
 
     my_app.stop()
 
