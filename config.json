@@ -9,5 +9,9 @@
   "main_script": "src/create_users_from_csv.py",
   "task_location": "application_sessions",
   "icon": "https://img.icons8.com/color/96/000000/group.png",
-  "icon_background": "#FFFFFF"
+  "icon_background": "#FFFFFF",
+  "headless": true,
+  "context_menu": {
+    "target": ["files_file"]   
+  }
 }
