@@ -27,9 +27,9 @@ App creates users using public API and available only for admin users and users 
 
 ## Preparation
 
-1. Create a `.csv` file with usernames and passwords
-2. `.csv` file must contain only 2 columns: user and password, all elements must be separated with `,`
-3. Here's an example of how your `.csv` file should look like:
+1. Create a `.csv` file with `usernames` and `passwords`
+2. `.csv` file must contain only 2 columns: `user` and `password`, all elements must be separated with `,`
+3. Here's the example of how your `.csv` file should look like:
 ```
 user,password
 user1, 123aaa
@@ -39,18 +39,22 @@ user4, 444ttt
 user5, 555555
 ```
 
-4. Drag and drop this file into your supervisely team files
+4. Drag and drop this file to Team Files
 <img src="https://i.imgur.com/mgzaJTu.giff"/>
 
 ## How To Run 
 **Step 1**: Add app to your team from Ecosystem if it is not there.
+<img src="https://i.imgur.com/9aWVw4M.png"/>
+<img src="https://i.imgur.com/U9rh3sB.png"/>
 
-**Step 2**: Go to `Plugins & Apps` section in current team. And press `Get` button in front of application.
+**Step 2**: Application will be added to `Current Team`->`PLugins & Apps` page.
+<img src="https://i.imgur.com/kYO0buj.png"/>
 
-**Step 3**: Application will be added to `Current Team`->`PLugins & Apps` page.
+**Step 3**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
+<img src="https://i.imgur.com/1K5IkK6.png"/>
 
-**Step 4**: Go to `Current Team`->`Files` page, right-click on your .csv file and choose `Run App`->`Create users from CSV`.
-
-**Step 5**: Click `Run` in the pop up menu.
+**Note**: You can check App `log` to ensure that `users` have been created.
+<img src="https://i.imgur.com/hQRUzY9.png"/>
+<img src="https://i.imgur.com/ElMJe3d.png"/>
 
 **Note**: App shuts down automatically on finish. Or you can stop it manually from app settings page.
