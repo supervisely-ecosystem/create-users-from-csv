@@ -44,17 +44,17 @@ user5, 555555
 
 ## How To Run 
 **Step 1**: Add app to your team from Ecosystem if it is not there.
-<img src="https://i.imgur.com/rbPecKB.png"/>
-<img src="https://i.imgur.com/XAMGfgi.png"/>
+<img src="https://i.imgur.com/MUbCf21.png"/>
+<img src="https://i.imgur.com/85LHmi3.png"/>
 
 **Step 2**: Application will be added to `Current Team`->`PLugins & Apps` page.
-<img src="https://i.imgur.com/gZ3yG9p.png"/>
+<img src="https://i.imgur.com/6U6G1f9.png"/> 
 
 **Step 3**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
-<img src="https://i.imgur.com/CfyCg4Q.png"/>
+<img src="https://i.imgur.com/E41x1G5.png"/> 
 
 **Note**: You can check App `log` to ensure that `users` have been created.
-<img src="https://i.imgur.com/9iXvtsM.png"/>
-<img src="https://i.imgur.com/Zv7jONK.png"/>
+<img src="https://i.imgur.com/mu05k5d.png"/>
+<img src="https://i.imgur.com/T3UMyD6.png"/>
 
 **Note**: App shuts down automatically on finish. Or you can stop it manually from app settings page.
