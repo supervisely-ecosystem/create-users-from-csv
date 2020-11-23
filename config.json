@@ -1,0 +1,19 @@
+{
+  "name": "Create users from CSV",
+  "type": "app",
+  "categories": [
+    "import",
+    "http"
+  ],
+  "description": "Create users from CSV file",
+  "docker_image": "supervisely/base-py-sdk:latest",
+  "main_script": "src/create_users_from_csv.py",
+  "gui_template": "src/gui.html",
+  "modal_template": "src/modal.html",
+  "modal_template_state": {},
+  "task_location": "workspace_tasks",
+  "isolate": true,
+  "icon_backup": "https://img.icons8.com/color/96/000000/cloud-link.png",
+  "icon": "https://img.icons8.com/color/96/000000/cloud-storage.png",
+  "icon_background": "#FFFFFF"
+}
