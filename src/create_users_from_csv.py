@@ -34,7 +34,7 @@ def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
             row[PASSWORD_COL_NAME] = row[PASSWORD_COL_NAME].strip()
 
             if row[LOGIN_COL_NAME] in new_users:
-                sly.logger.warn(f'Duplicate login found in csv file: {row[LOGIN_COL_NAME]}')
+                app_logger.warn(f'Duplicate login found in csv file: {row[LOGIN_COL_NAME]}')
 
             new_users[row[LOGIN_COL_NAME]] = row
 
@@ -42,14 +42,14 @@ def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
 
     for existing_user in existing_users:
         if existing_user.login in new_users:
-            sly.logger.warn(f"Username \"{existing_user.login}\" already exists")
+            app_logger.warn(f"Username \"{existing_user.login}\" already exists")
             del new_users[existing_user.login]
 
-    progress = sly.Progress('Creating users...', len(new_users), sly.logger)
+    progress = sly.Progress('Creating users...', len(new_users), app_logger)
 
     for user, user_data in new_users.items():
         api.user.create(login=user_data[LOGIN_COL_NAME], password=user_data[PASSWORD_COL_NAME], is_restricted=False)
-        sly.info("User {!r} is created".format(user_data[LOGIN_COL_NAME]))
+        app_logger.info("User {!r} is created".format(user_data[LOGIN_COL_NAME]))
         progress.iter_done_report()
 
     sly.fs.silent_remove(local_csv_path)
