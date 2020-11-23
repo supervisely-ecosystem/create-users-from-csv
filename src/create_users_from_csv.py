@@ -5,16 +5,14 @@ import supervisely_lib as sly
 
 my_app = sly.AppService()
 
-INPUT_FILE = os.environ['INPUT_FILE']
-
-SERVER_ADDRESS = os.environ['SERVER_ADDRESS']
-API_TOKEN = os.environ['API_TOKEN']
-api = sly.Api(SERVER_ADDRESS, API_TOKEN)
+TEAM_ID = int(os.environ['context.teamId'])
+WORKSPACE_ID = int(os.environ['context.workspaceId'])
+INPUT_FILE = os.environ['modal.state.slyFile']
 
 LOGIN_COL_NAME = 'user'
 PASSWORD_COL_NAME = 'password'
-
 DEFAULT_DELIMITER = ','
+
 
 @my_app.callback("create_user_from_csv")
 @sly.timeit
