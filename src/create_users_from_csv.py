@@ -49,6 +49,7 @@ def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
 
     for user, user_data in new_users.items():
         api.user.create(login=user_data[LOGIN_COL_NAME], password=user_data[PASSWORD_COL_NAME], is_restricted=False)
+        sly.info("User {!r} is created".format(user_data[LOGIN_COL_NAME]))
         progress.iter_done_report()
 
     sly.fs.silent_remove(local_csv_path)
