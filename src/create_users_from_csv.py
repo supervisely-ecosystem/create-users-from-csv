@@ -48,7 +48,9 @@ def create_user_from_csv(api: sly.Api, task_id, context, state, app_logger):
 
 def main():
     sly.logger.info("Script arguments", extra={
-        "CONFIG_DIR": os.environ.get("CONFIG_DIR", "ENV not found")
+        "TEAM_ID": TEAM_ID,
+        "WORKSPACE_ID": WORKSPACE_ID,
+        "INPUT_FILE": INPUT_FILE
     })
 
     # Run application service
