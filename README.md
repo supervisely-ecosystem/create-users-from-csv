@@ -48,10 +48,10 @@ user5, 555555
 **Step 2**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
 <img src="https://i.imgur.com/qlEcP2t.png"/> 
 
-**Note**: To open application `log` go to `Current Team`->`PLugins & Apps` page.
+**Note**: To open log go to `Current Team`->`PLugins & Apps` page.
 <img src="https://i.imgur.com/mzVYWKF.png"/>
 
-**Note**: In application `log` you will see created `users`, or a `warn` message if `user` already exists
+**Note**: In app log you will see created users, or a warning message if user already exists.
 <img src="https://i.imgur.com/1d5scxy.png"/>
 
 **Note**: App shuts down automatically on finish. Or you can stop it manually from app settings page.
