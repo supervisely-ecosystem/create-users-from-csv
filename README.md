@@ -46,7 +46,7 @@ user5, 555555
 **Step 1**: Add app to your team from Ecosystem if it is not there. Application will be added to `Current Team`->`PLugins & Apps` page.
 <img src="https://i.imgur.com/trrHF5g.png"/> 
 
-**Step 3**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
+**Step 2**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
 <img src="https://i.imgur.com/qlEcP2t.png"/> 
 
 **Note**: To open application `log` go to `Current Team`->`PLugins & Apps` page.
