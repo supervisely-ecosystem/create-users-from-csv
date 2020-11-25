@@ -43,11 +43,7 @@ user5, 555555
 <img src="https://i.imgur.com/mgzaJTu.giff"/>
 
 ## How To Run 
-**Step 1**: Add app to your team from Ecosystem if it is not there.
-<img src="https://i.imgur.com/MUbCf21.png"/>
-<img src="https://i.imgur.com/85LHmi3.png"/>
-
-**Step 2**: Application will be added to `Current Team`->`PLugins & Apps` page.
+**Step 1**: Add app to your team from Ecosystem if it is not there. Application will be added to `Current Team`->`PLugins & Apps` page.
 <img src="https://i.imgur.com/6U6G1f9.png"/> 
 
 **Step 3**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
