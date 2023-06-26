@@ -39,19 +39,19 @@ user5, 555555
 ```
 
 4. Drag and drop this file to Team Files
-<img src="https://i.imgur.com/mgzaJTu.giff"/>
+<img src="media/p4.gif"/>
 
 ## How To Run 
 **Step 1**: Add app to your team from Ecosystem if it is not there. Application will be added to `Current Team`->`PLugins & Apps` page.
-<img src="https://i.imgur.com/trrHF5g.png"/> 
+<img src="media/ht1.png"/> 
 
 **Step 2**: Go to `Current Team`->`Files` page, right-click on your `.csv file` and choose `Run App`->`Create users from CSV`.
-<img src="https://i.imgur.com/qlEcP2t.png"/> 
+<img src="media/ht2.png"/> 
 
 **Note**: To open log go to `Current Team`->`PLugins & Apps` page.
-<img src="https://i.imgur.com/mzVYWKF.png"/>
+<img src="media/ht2a.png"/>
 
 **Note**: In app log you will see created users, or a warning message if user already exists.
-<img src="https://i.imgur.com/1d5scxy.png"/>
+<img src="media/ht2b.png"/>
 
 **Note**: App shuts down automatically on finish. Or you can stop it manually from app settings page.
