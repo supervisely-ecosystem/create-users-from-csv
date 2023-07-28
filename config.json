@@ -1,20 +1,20 @@
 {
-  "name": "Create users from CSV",
-  "type": "app",
-  "categories": [
-    "collaboration"
-  ],
-  "description": "Only instance admin has permissions to run it",
-  "docker_image": "supervisely/base-py-sdk:6.72.70",
-  "main_script": "src/create_users_from_csv.py",
-  "task_location": "application_sessions",
-  "icon": "https://img.icons8.com/color/96/000000/group.png",
-  "icon_background": "#FFFFFF",
-  "headless": true,
-  "context_menu": {
-    "target": [
-      "files_file"
-    ]
-  },
-  "poster": "https://user-images.githubusercontent.com/48245050/182578612-7a10814b-7494-4ae3-aa62-486171fcc480.png"
+    "name": "Create users from CSV",
+    "type": "app",
+    "categories": [
+        "collaboration"
+    ],
+    "description": "Only instance admin has permissions to run it",
+    "docker_image": "supervisely/collaboration:0.0.1",
+    "main_script": "src/create_users_from_csv.py",
+    "task_location": "application_sessions",
+    "icon": "https://img.icons8.com/color/96/000000/group.png",
+    "icon_background": "#FFFFFF",
+    "headless": true,
+    "context_menu": {
+        "target": [
+            "files_file"
+        ]
+    },
+    "poster": "https://user-images.githubusercontent.com/48245050/182578612-7a10814b-7494-4ae3-aa62-486171fcc480.png"
 }
