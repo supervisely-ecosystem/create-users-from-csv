@@ -11,7 +11,7 @@
   <a href="#How-To-Use">How To Use</a>
 </p>
 
-[![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](../../../../supervisely-ecosystem/create-users-from-csv)
+[![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](https://ecosystem.supervisely.com/apps/create-users-from-csv)
 [![](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://supervisely.com/slack)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/create-users-from-csv)
 [![views](https://app.supervisely.com/img/badges/views/supervisely-ecosystem/create-users-from-csv.png)](https://supervisely.com)
